@@ -33,21 +33,21 @@ public:
 
 private:
 
-	double minArea = 10;
-	double maxArea = 800;
-	double minCircularity = 0.5;
-	double maxCircularity = 1.0;
-	double minInertiaRatio = 0.5;
-	double maxInertiaRatio = 1.0;
-	double minConvexity = 0.1;
-	double maxConvexity = 1.0;
-	int blobColor = 255;
+	const double minArea = 10;
+	const double maxArea = 800;
+	const double minCircularity = 0.5;
+	const double maxCircularity = 1.0;
+	const double minInertiaRatio = 0.5;
+	const double maxInertiaRatio = 1.0;
+	const double minConvexity = 0.1;
+	const double maxConvexity = 1.0;
+	const int blobColor = 255;
 
-	int thresholdStep = 10;
-	int minThreshold = 50;
-	int maxThreshold = 220;
-	int minRepeatability = 2;
-	int minDistBetweenBlobs = 10;
+	const int thresholdStep = 10;
+	const int minThreshold = 50;
+	const int maxThreshold = 220;
+	const int minRepeatability = 2;
+	const int minDistBetweenBlobs = 10;
 
 };
 
