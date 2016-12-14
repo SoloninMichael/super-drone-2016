@@ -12,7 +12,6 @@ using namespace cv;
 static double EPS;
 
 static KeyPoint pnt;
-//std::vector<int> num_flsh;
 
 bool InEps(KeyPoint&);
 
