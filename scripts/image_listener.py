@@ -7,21 +7,46 @@ import cv2
 import os
 import signal
 i = 0
+x = 0
+y = 180
+forw = 0
 
 def myshow(data):
-    global i
+    global i, forw
     '''f = open('img', 'w')
     f.write(data.data)
     f.close()'''
     cv_image = CvBridge().imgmsg_to_cv2(data, "bgr8")
+    height, width, channels = cv_image.shape
+    print height, width
     gr = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
+    gr = cv2.GaussianBlur(gr, (5, 5), 0)
+    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(gr)
+    
+    cv2.circle(gr, maxLoc, 10, 100)
     cv2.imshow("Image window", gr)
     cv2.waitKey(25)
-    print i
-    i += 1
-    if i > 100:
-	sub.unregister()
+    if (maxLoc[0] >= 300) and (maxLoc[0] <= 340):
+#        sub.unregister()
+#        pub.publish("land")
+        forw += 1
+        pub.publish("forward 1")
+        if forw > 3:
+            sub.unregister()
+            pub.publish("land")
+    elif (maxLoc[0] < 300):
+        pub.publish("turn_left " + str(1.0/10))
+        forw = 0
+    else:
+        pub.publish("turn_right " + str(1.0/10))
+        forw = 0
+	
+#    print i
+#    i += 1
+#    if i > 100:
+#	sub.unregister()
 #    rospy.Rate(0.1).sleep()
+    
 
 def listener():
 
@@ -35,7 +60,10 @@ def listener():
 
     global sub
     sub = rospy.Subscriber('/ardrone/image_raw', Image, myshow)
-
+    
+    global pub
+    pub = rospy.Publisher('for_master', String, queue_size=10)
+    
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
     exit()

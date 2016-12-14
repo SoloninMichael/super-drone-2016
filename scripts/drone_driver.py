@@ -27,7 +27,7 @@ class Params:
 
 state = State()
 linear_params = Params(time=0.65, speed=0.25)
-angle_params = Params(time=2, speed=0.5)
+angle_params = Params(time=1.0/3, speed=0.5)
 
 
 def update_state(data):
@@ -47,7 +47,7 @@ def update_state(data):
 		rospy.sleep(1)
 		state = State("land")
 
-	state = State(tmp[0], int (tmp[1]))
+	state = State(tmp[0], float(tmp[1]))
 
 
 def drone_driver():

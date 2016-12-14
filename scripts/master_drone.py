@@ -4,30 +4,22 @@ import rospy
 import time
 from std_msgs.msg import String, Empty
 
+def move(data):
+	pub.publish(data.data)
+
 def master_drone():
+    global pub
     pub = rospy.Publisher('master', String, queue_size=10)
+    sub = rospy.Subscriber('for_master', String, move)
     rospy.init_node('master_drone', anonymous=True)
 
     # Here we can write write whatever we need drone to do
-    # and post it to the topic
+    # and post it to the topic    
 
     pub.publish("take_off")
 
-    rospy.sleep(4)
-
-    pub.publish("pass")
-
-    rospy.sleep(4)
-
-    pub.publish("turn_left 1")
-
-    rospy.sleep(4)
-
-    pub.publish("turn_right 1")
-
-    rospy.sleep(4)
-
-    pub.publish("land")
+    rospy.spin()
+    
 
 if __name__ == '__main__':
     try:
