@@ -27,7 +27,7 @@ public:
 		double confidence;
 	};
 
-	virtual void detectFlash(InputArray image, std::vector<KeyPoint>& keypoints, std::vector<int>& num_flsh);//InputArray mask = noArray());
+	virtual void detectFlash(InputArray image, std::vector<KeyPoint>& keypoints, std::vector<int>& num_flsh);
 	virtual void findBlobs(InputArray image, InputArray binaryImage, std::vector<Center> &centers, InputArray img) const;
 
 private:
