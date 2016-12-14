@@ -91,6 +91,16 @@ def drone_driver():
     		rospy.sleep(state.times * linear_params.time)
     		state.action = "hover"
 
+    	elif state.action == "up":
+    		go_pub.publish(Twist(linear=vec(0,0,linear_params.speed), angular=vec(0,0,0)))
+    		rospy.sleep(state.times * linear_params.time)
+    		state.action = "hover"
+
+    	elif state.action == "down":
+    		go_pub.publish(Twist(linear=vec(0,0,(-1) * linear_params.speed), angular=vec(0,0,0)))
+    		rospy.sleep(state.times * linear_params.time)
+    		state.action = "hover"
+
     	elif state.action == "turn_left":
     		go_pub.publish(Twist(linear=vec(0,0,0), angular=vec(0,0,angle_params.speed)))
     		rospy.sleep(state.times * angle_params.time)
