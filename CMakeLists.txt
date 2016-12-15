@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(beginner_tutorials)
+project(super_drone)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -8,7 +8,10 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  genmsg
 )
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -22,6 +25,9 @@ find_package(catkin REQUIRED COMPONENTS
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
+
+add_message_files(DIRECTORY msg)
+#add_service_files(DIRECTORY srv FILES AddTwoInts.srv)
 
 ## To declare and build messages, services or actions from within this
 ## package, follow these steps:
@@ -116,6 +122,15 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+
+#include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(simple src/simple.cpp)
+target_link_libraries(simple ${catkin_LIBRARIES})
+#add_dependencies(talker beginner_tutorials_generate_messages_cpp)
+
+
 
 ## Declare a C++ library
 # add_library(beginner_tutorials
