@@ -9,7 +9,11 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   genmsg
+  cv_bridge
 )
+
+find_package( OpenCV REQUIRED )
+
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
@@ -121,13 +125,18 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  /opt/ros/kinetic/include/opencv-3.1.0-dev
+   ${OpenCV_INCLUDE_DIRS}
 )
+
+
+set(ROS_LINK_FLAGS "-lopencv_core  -lopencv_imgproc  -lopencv_highgui  -lopencv_ml  -lopencv_video  -lopencv_features2d  -lopencv_calib3d  -lopencv_objdetect  -lopencv_flann -lopencv_videoio")
 
 
 #include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(simple src/simple.cpp)
-target_link_libraries(simple ${catkin_LIBRARIES})
+target_link_libraries(simple ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 #add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
 

@@ -17,8 +17,8 @@ bool IsFlash(int& a) {
 
 void FlashDetector::findBlobs(InputArray _image, InputArray _binaryImage, std::vector<Center> &centers, InputArray _img) const
 {
-	Mat image = _image.getMat(), binaryImage = _binaryImage.getMat(), img = _img.getMat();
-	(void)image;
+	Mat  /* image = _image.getMat(), */ binaryImage = _binaryImage.getMat(), img = _img.getMat();
+	// (void)image;
 	centers.clear();
 
 	std::vector < std::vector<Point> > contours;

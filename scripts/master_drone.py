@@ -16,9 +16,26 @@ def master_drone():
     # Here we can write write whatever we need drone to do
     # and post it to the topic    
 
-    pub.publish("take_off")
+    try:
+        pub.publish("take_off")
 
-    rospy.spin()
+        rospy.sleep(10)
+
+        pub.publish("up 3")
+
+        rospy.sleep(10)
+
+        pub.publish("turn_left 5")
+
+        print "senT up"
+        rospy.sleep(3)
+
+        pub.publish("land")
+        print "land"
+
+        rospy.spin()
+    except:
+        pub.publish("land")
     
 
 if __name__ == '__main__':
