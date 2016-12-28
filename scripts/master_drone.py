@@ -5,7 +5,8 @@ import time
 from std_msgs.msg import String, Empty
 
 def move(data):
-	pub.publish(data.data)
+    print "heard it!", data.data
+    #pub.publish(data.data)
 
 def master_drone():
     global pub
@@ -17,6 +18,12 @@ def master_drone():
     # and post it to the topic    
 
     try:
+
+	count = 10000;
+        while count > 0:
+		count -= 1
+		pass
+
         pub.publish("take_off")
 
         rospy.sleep(10)

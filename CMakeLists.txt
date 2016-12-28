@@ -135,8 +135,8 @@ set(ROS_LINK_FLAGS "-lopencv_core  -lopencv_imgproc  -lopencv_highgui  -lopencv_
 
 #include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(simple src/simple.cpp)
-target_link_libraries(simple ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
+add_executable(simpler src/simpler.cpp)
+target_link_libraries(simpler ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 #add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
 
