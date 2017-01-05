@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector.hpp
+/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp
+opencv2/opencv.hpp
+-
+FlashDetector.hpp
+/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.hpp
+
+/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.hpp
 opencv2/opencv.hpp
 -
 vector
@@ -22,19 +28,19 @@ limits
 cmath
 -
 
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/simple.cpp
+/home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp
 opencv2/opencv.hpp
 -
 ros/ros.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/ros/ros.h
+/home/rosuser/catkin_ws/src/super_drone/src/ros/ros.h
 sensor_msgs/Image.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/sensor_msgs/Image.h
+/home/rosuser/catkin_ws/src/super_drone/src/sensor_msgs/Image.h
 std_msgs/String.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/std_msgs/String.h
+/home/rosuser/catkin_ws/src/super_drone/src/std_msgs/String.h
 std_msgs/Empty.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/std_msgs/Empty.h
+/home/rosuser/catkin_ws/src/super_drone/src/std_msgs/Empty.h
 FlashDetector.hpp
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector.hpp
+/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.hpp
 string
 -
 ros/ros.h
@@ -700,8 +706,6 @@ cstdarg
 ros/macros.h
 -
 map
--
-vector
 -
 log4cxx/level.h
 /opt/ros/kinetic/include/ros/log4cxx/level.h

@@ -1,5 +1,5 @@
 #include <opencv2/opencv.hpp>
-#include "FlashDetector.h"
+#include "FlashDetector_new.hpp"
 
 using namespace std;
 using namespace cv;

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector.cpp" "/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/simple.dir/src/FlashDetector.cpp.o"
-  "/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/simple.cpp" "/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/simple.dir/src/simple.cpp.o"
+  "/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp" "/home/rosuser/catkin_ws/src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o"
+  "/home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp" "/home/rosuser/catkin_ws/src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

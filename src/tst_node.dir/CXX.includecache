@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/simpler.cpp
+/home/rosuser/catkin_ws/src/super_drone/src/tst_node.cpp
 opencv2/opencv.hpp
 -
 ros/ros.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/ros/ros.h
+/home/rosuser/catkin_ws/src/super_drone/src/ros/ros.h
 sensor_msgs/Image.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/sensor_msgs/Image.h
+/home/rosuser/catkin_ws/src/super_drone/src/sensor_msgs/Image.h
 std_msgs/String.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/std_msgs/String.h
+/home/rosuser/catkin_ws/src/super_drone/src/std_msgs/String.h
 std_msgs/Empty.h
-/home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/std_msgs/Empty.h
+/home/rosuser/catkin_ws/src/super_drone/src/std_msgs/Empty.h
 ros/ros.h
 -
 sstream
@@ -682,8 +682,6 @@ cstdarg
 ros/macros.h
 -
 map
--
-vector
 -
 log4cxx/level.h
 /opt/ros/kinetic/include/ros/log4cxx/level.h
