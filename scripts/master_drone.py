@@ -6,7 +6,7 @@ from std_msgs.msg import String, Empty
 
 def move(data):
     print "heard it!", data.data
-    #pub.publish(data.data)
+    pub.publish(data.data)
 
 def master_drone():
     global pub
@@ -19,26 +19,28 @@ def master_drone():
 
     try:
 
-	count = 10000;
-        while count > 0:
-		count -= 1
-		pass
+	#count = 200;
+        #while count > 0:
+	#	count -= 1
+	#	pass
 
         pub.publish("take_off")
 
-        rospy.sleep(10)
+	print "taking off"
 
-        pub.publish("up 3")
+        rospy.sleep(5)
 
-        rospy.sleep(10)
+        #pub.publish("up 3")
 
-        pub.publish("turn_left 5")
+        #rospy.sleep(10)
 
-        print "senT up"
-        rospy.sleep(3)
+       # pub.publish("turn_left 5")
 
-        pub.publish("land")
-        print "land"
+       # print "senT up"
+      #  rospy.sleep(3)
+
+       # pub.publish("land")
+        #print "land"
 
         rospy.spin()
     except:

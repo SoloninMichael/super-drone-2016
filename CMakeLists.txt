@@ -135,8 +135,11 @@ set(ROS_LINK_FLAGS "-lopencv_core  -lopencv_imgproc  -lopencv_highgui  -lopencv_
 
 #include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(simpler src/simpler.cpp)
-target_link_libraries(simpler ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
+add_executable(../../../src/super_drone/src/simple src/simple.cpp src/FlashDetector.cpp)
+target_link_libraries(../../../src/super_drone/src/simple ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
+
+add_executable(../../../src/super_drone/src/simpler src/simpler.cpp)
+target_link_libraries(../../../src/super_drone/src/simpler ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 #add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
 
