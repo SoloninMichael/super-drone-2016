@@ -34,8 +34,8 @@ public:
 private:
 
 	const double minArea = 10;
-	const double maxArea = 5000; //idek wtf this is. lower values get filtered out. need more data
-	const double minCircularity = 0.5;
+	const double maxArea = 5000; //idk wtf this is. lower values get filtered out. need more data
+	const double minCircularity = 0.;
 	const double maxCircularity = 1.0;
 	const double minInertiaRatio = 0.5;
 	const double maxInertiaRatio = 1.5;
@@ -44,7 +44,7 @@ private:
 	const int blobColor = 255;
 
 	const int thresholdStep = 10;
-	const int minThreshold = 190;
+	const int minThreshold = 50;
 	const int maxThreshold = 220;
 	const int minRepeatability = 2;
 	const int minDistBetweenBlobs = 10;

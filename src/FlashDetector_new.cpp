@@ -10,7 +10,7 @@ bool InEps(KeyPoint& kpt) {
 }
 
 bool IsFlash(int& a) {
-	return (a < 6 && a > 4);
+	return (a <= 7 && a >= 4);
 }
 
 
@@ -39,8 +39,8 @@ void FlashDetector::findBlobs(InputArray _image, InputArray _binaryImage, std::v
 	cvtColor( binaryImage, contoursImage, CV_GRAY2RGB );
 	drawContours( contoursImage, contours, -1, Scalar(0,255,0) );
 	//cout << contours.size() << "\n";
-	imshow("contours", contoursImage );
-	waitKey(30);
+	//imshow("contours", contoursImage );
+	//waitKey(30);
 	
 
 	for (size_t contourIdx = 0; contourIdx < contours.size(); contourIdx++)
