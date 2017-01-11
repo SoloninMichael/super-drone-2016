@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp
-opencv2/opencv.hpp
--
-FlashDetector.hpp
-/home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.hpp
-
 /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.hpp
 opencv2/opencv.hpp
 -

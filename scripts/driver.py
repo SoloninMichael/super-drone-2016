@@ -58,11 +58,13 @@ def drone_driver():
     takeoff_pub = rospy.Publisher('/ardrone/takeoff', Empty, queue_size=10)
     land_pub = rospy.Publisher('/ardrone/land', Empty, queue_size=10)
     go_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+    
+    done_pub = rospy.Publisher('action_done', Empty, queue_size=10)
 
     rate = rospy.Rate(1)
 
 
-    rospy.Subscriber('master', String, update_state)
+    rospy.Subscriber('action', String, update_state)
 
     while not rospy.is_shutdown():
 
@@ -70,21 +72,21 @@ def drone_driver():
 			go_pub.publish(Twist(linear=vec(0,0,0), angular=vec(0,0,0)))
 			rate.sleep()
 
-    	elif state.action == "take_off":
-		print "gonna take off"
-    		takeoff_pub.publish(Empty())
-    		rate.sleep()
-    		state.action = "hover"
+        elif state.action == "take_off":
+		    print "gonna take off"
+		    takeoff_pub.publish(Empty())
+		    rate.sleep()
+		    state.action = "hover"
 
-    	elif state.action == "land":
-    		land_pub.publish(Empty())
-    		rate.sleep()
-    		state.action = "hover"
+        elif state.action == "land":
+            land_pub.publish(Empty())
+            rate.sleep()
+            state.action = "hover"
 
-    	elif state.action == "forward":
-    		go_pub.publish(Twist(linear=vec(linear_params.speed,0,0), angular=vec(0,0,0)))
-    		rospy.sleep(state.times * linear_params.time)
-    		state.action = "hover"
+        elif state.action == "forward":
+            go_pub.publish(Twist(linear=vec(linear_params.speed,0,0), angular=vec(0,0,0)))
+            rospy.sleep(state.times * linear_params.time)
+            state.action = "hover"
 
     	elif state.action == "back":
     		go_pub.publish(Twist(linear=vec( (-1) * linear_params.speed,0,0), angular=vec(0,0,0)))
@@ -112,10 +114,12 @@ def drone_driver():
     		state.action = "hover"
 
     	else:
-    		print "incorrect state! Drone sill be landed! ", state.action, state.times
+    		print "incorrect state! Drone will be landed! ", state.action, state.times
     		land_pub.publish(Empty())
     		rate.sleep()
     		break
+    	done_pub.publish(Empty())
+    	rate.sleep()
 
 if __name__ == '__main__':
     try:

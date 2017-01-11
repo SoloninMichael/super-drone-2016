@@ -7,11 +7,20 @@ from std_msgs.msg import String, Empty
 def move(data):
     print "heard it!", data.data
     pub.publish(data.data)
+    rospy.Rate(1).sleep()
+    
+def run_detection(data):
+    rospy.Rate(1).sleep()
+    detect_pub.publish(Empty())
+    rospy.Rate(1).sleep()
 
 def master_drone():
-    global pub
-    pub = rospy.Publisher('master', String, queue_size=10)
+    global pub, detect_pub
+    pub = rospy.Publisher('action', String, queue_size=10)
+    detect_pub = rospy.Publisher('detect', Empty, queue_size=10)
     sub = rospy.Subscriber('for_master', String, move)
+    done_sub = rospy.Subscriber('action_done', Empty, run_detection)
+    
     rospy.init_node('master_drone', anonymous=True)
 
     # Here we can write write whatever we need drone to do
@@ -25,9 +34,7 @@ def master_drone():
 	#	pass
 
         pub.publish("take_off")
-
-	print "taking off"
-
+        print "taking off"
         rospy.sleep(5)
 
         #pub.publish("up 3")
