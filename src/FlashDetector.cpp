@@ -22,7 +22,7 @@ bool InEps(KeyPoint& kpt) {
 
 bool IsFlash(int& a) {
 
-	return (a <= 7 && a >= 4);
+	return (a <= 7 && a >= 3);
 
 }
 

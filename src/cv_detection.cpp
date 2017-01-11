@@ -40,7 +40,7 @@ int fly_to (int x, int y)
 {
 	ros::Duration(0.01).sleep();
 	int spin = MED_X - x;
-	if ( std::abs( spin ) > 50)
+	if ( std::abs( spin ) > 100)
 	{
 		// send message: turn_left spin
 		std_msgs::String msg;
@@ -62,7 +62,7 @@ int fly_to (int x, int y)
 	{
 
 		int altitude = MED_Y - y;
-		if ( std::abs(altitude) > 50 )
+		if ( std::abs(altitude) > 100 )
 		{
 			// send message: up altitude
 			std_msgs::String msg;
@@ -131,7 +131,7 @@ static const std::string OPENCV_WINDOW = "Image window";
 
 void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 {
-    ROS_INFO("I heard!");
+    //ROS_INFO("I heard!");
 
     frame_counter++;
 

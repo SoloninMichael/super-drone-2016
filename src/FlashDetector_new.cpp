@@ -104,7 +104,7 @@ void FlashDetector::findBlobs(InputArray _image, InputArray _binaryImage, std::v
 
 		Vec3b colour = img.at<Vec3b>(Point(cvRound(center.location.x), cvRound(center.location.y)));
 		//if (binaryImage.at<uchar>(cvRound(center.location.y), cvRound(center.location.x)) != blobColor)
-		if (colour[0] < 250 && colour[1] < 250 && colour[2] < 250) {
+		if (colour[0] < 253 && colour[1] < 253 && colour[2] < 253) {
 			//cout << "col\n";
 				continue;
 		}

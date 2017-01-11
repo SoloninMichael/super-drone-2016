@@ -72,7 +72,7 @@ private:
 
 	const double maxArea = 1200;
 
-	const double minCircularity = 0.;
+	const double minCircularity = 0.5;
 
 	const double maxCircularity = 1.0;
 
