@@ -135,13 +135,15 @@ set(ROS_LINK_FLAGS "-lopencv_core  -lopencv_imgproc  -lopencv_highgui  -lopencv_
 
 #include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(../../../src/super_drone/src/cv_detection src/cv_detection.cpp src/FlashDetector.cpp)
-target_link_libraries(../../../src/super_drone/src/cv_detection ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
+#add_executable(../../../src/super_drone/src/cv_detection src/cv_detection.cpp src/FlashDetector.cpp)
+#target_link_libraries(../../../src/super_drone/src/cv_detection ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 
-add_executable(../../../src/super_drone/src/new_cv src/cv_detection_new.cpp src/FlashDetector_new.cpp)
-target_link_libraries(../../../src/super_drone/src/new_cv ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
+#add_executable(../../../src/super_drone/src/new_cv src/cv_detection_new.cpp src/FlashDetector_new.cpp)
+#target_link_libraries(../../../src/super_drone/src/new_cv ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 #add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
+add_executable(../../../src/super_drone/src/cv_detection src/cv_detection_no_lamps.cpp src/FlashDetector2_1.cpp)
+target_link_libraries(../../../src/super_drone/src/cv_detection ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 
 
 ## Declare a C++ library

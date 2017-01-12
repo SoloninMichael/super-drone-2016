@@ -57,64 +57,64 @@ include super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/pro
 # Include the compile flags for this target's objects.
 include super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.i"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.i
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.s"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/cv_detection.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.s
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.requires:
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.requires:
 
-.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.requires
+.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.requires
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.provides: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.requires
-	$(MAKE) -f super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.provides.build
-.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.provides
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.provides: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.requires
+	$(MAKE) -f super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.provides.build
+.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.provides
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.provides.build: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.provides.build: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o
 
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.i"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.i
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.s"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.s
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s"
+	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.requires:
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.requires:
 
-.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.requires
+.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.requires
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.provides: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.requires
-	$(MAKE) -f super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.provides.build
-.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.provides
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.provides: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.requires
+	$(MAKE) -f super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.provides.build
+.PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.provides
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.provides.build: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.provides.build: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o
 
 
 # Object files for target ../../../src/super_drone/src/cv_detection
 __/__/__/src/super_drone/src/cv_detection_OBJECTS = \
-"CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o" \
-"CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o"
+"CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o" \
+"CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
 
 # External object files for target ../../../src/super_drone/src/cv_detection
 __/__/__/src/super_drone/src/cv_detection_EXTERNAL_OBJECTS =
 
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o
+/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o
+/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o
 /home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make
 /home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
 /home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
@@ -231,8 +231,8 @@ super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build: /hom
 
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build
 
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o.requires
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o.requires
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.requires
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.requires
 
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires
 

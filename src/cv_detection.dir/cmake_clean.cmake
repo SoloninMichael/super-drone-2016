@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection.cpp.o"
-  "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector.cpp.o"
+  "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o"
+  "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
   "/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection.pdb"
   "/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection"
 )
