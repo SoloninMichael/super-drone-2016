@@ -93,9 +93,9 @@ int fly_to (int x, int y)
 	// ready to fly towards the flash light
 }
 
-int detector(Mat &frame)
+Point detector(Mat &src)
 {
-	FlashDetector det;
+	/*FlashDetector det;
 
 	Mat desc, result(frame.rows, frame.cols, CV_8UC3);
 
@@ -111,15 +111,58 @@ int detector(Mat &frame)
 
 		//int kk = 0;
 
-		//while (kk != 'a') {
+		//while (kk != 'a') {*/
 
-	imshow("res", result);
 
-	cvWaitKey(33);
 
 		//}
 
-	return 0;
+//*******************************************************************************************
+	
+	//Mat src;
+	Mat img;
+	Mat tmp;
+	//int k = 0;
+	
+	/*if (argc > 1) {
+		src = imread(argv[1]);
+	}
+	else {
+		return -1;
+	}
+
+	if (!src.data) {
+		return -1;
+	}*/
+
+	medianBlur(src, src, 5);
+
+	imshow("before", src);
+	waitKey(30);
+
+	cvtColor(src, img, COLOR_BGR2HSV);
+	GaussianBlur(img, img, Size(9, 9), 2, 2);
+	inRange(img, cv::Scalar(170, 160, 160), cv::Scalar(190, 255, 255), tmp);
+
+	std::vector<cv::Vec3f> circles;
+	HoughCircles(tmp, circles, CV_HOUGH_GRADIENT, 1, tmp.rows / 8, 100, 10, 0, 100);
+
+	if (circles.size() != 1) {
+		cout << "unfortunate\n";
+		return Point(0, 0);
+	}
+	//for (size_t current_circle = 0; current_circle < circles.size(); ++current_circle) {
+	Point center(std::round(circles[0][0]), std::round(circles[0][1]));
+	int radius = std::round(circles[0][2]);
+	circle(src, center, radius, cv::Scalar(0, 255, 0), 5);
+	
+	cout << center.x << "  " << center.y << "\n";
+
+	imshow("res", src);
+
+	cvWaitKey(33);
+
+	return center;
 }
 
 
@@ -149,21 +192,22 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 	Mat img;
 	double minVal, maxVal;
 	Point minLoc, maxLoc;
+	Point pnt;
 
 	// cvtColor(cv_ptr->image, img, CV_BGR2GRAY);
 	//bilateralFilter(img, img, 3, 8, 1.5);
 	
-	detector(cv_ptr->image);
+	pnt = detector(cv_ptr->image);
 
 	//minMaxLoc(img, &minVal, &maxVal, &minLoc, &maxLoc);
 	
-	if (frame_counter < MAX_FRAMES)
-		return;
+	//if (frame_counter < MAX_FRAMES)
+		//return;
 
-	vector<int>::iterator f = find_if(num_flash.begin(), num_flash.end(), IsFlash);
+	//vector<int>::iterator f = find_if(num_flash.begin(), num_flash.end(), IsFlash);
 
 	
-	if (f != num_flash.end()) {
+	/*if (f != num_flash.end()) {
 
 		KeyPoint fin = keyImg[f - num_flash.begin()];
 
@@ -176,9 +220,10 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 		waitKey(15); //blaze it
 
 		fly_to (fin.pt.x, fin.pt.y);
-	}
-
-	else {
+	}*/
+    if(pnt.x != 0 && pnt.y != 0) 
+	    fly_to (pnt.x, pnt.y);
+	/*else {
 		cout << "Nothing found.\n";
 		std_msgs::String msg;
 
@@ -187,7 +232,7 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 		ROS_INFO("%s", msg.data.c_str());
 		pub.publish(msg);
 		ros::Duration(0.01).sleep();
-	}
+	}*/
 
 	frame_counter = 0;
 	num_flash.erase(num_flash.begin(), num_flash.end());
