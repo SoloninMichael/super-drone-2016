@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o"
   "CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
-  "/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection.pdb"
-  "/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection"
+  "/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection.pdb"
+  "/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection"
 )
 
 # Per-language clean rules from dependency scanning.

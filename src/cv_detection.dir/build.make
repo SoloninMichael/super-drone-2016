@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosuser/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/gand/Documents/ros/drone_project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosuser/catkin_ws/build
+CMAKE_BINARY_DIR = /home/gand/Documents/ros/drone_project/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/depend.make
@@ -58,17 +58,17 @@ include super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/pro
 include super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o: /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gand/Documents/ros/drone_project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o"
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o -c /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.i
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/cv_detection_no_lamps.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.s
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o.requires:
 
@@ -82,17 +82,17 @@ super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_dete
 
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/flags.make
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o: /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o -c /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o: /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gand/Documents/ros/drone_project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o"
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o -c /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp > CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.i
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s"
-	cd /home/rosuser/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosuser/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/FlashDetector2_1.cpp -o CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.s
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o.requires:
 
@@ -113,121 +113,121 @@ __/__/__/src/super_drone/src/cv_detection_OBJECTS = \
 # External object files for target ../../../src/super_drone/src/cv_detection
 __/__/__/src/super_drone/src/cv_detection_EXTERNAL_OBJECTS =
 
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_tracking3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_surface_matching3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_structured_light3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stereo3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_saliency3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_rgbd3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_reg3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_plot3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_optflow3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_line_descriptor3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_hdf3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_fuzzy3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dpm3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dnn3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_datasets3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_cvv3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ccalib3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bioinspired3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bgsegm3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_aruco3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_viz3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videostab3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_superres3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_photo3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libroscpp.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_signals.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libcv_bridge.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ximgproc3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xfeatures2d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_tracking3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_text3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_surface_matching3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_structured_light3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stereo3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_saliency3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_rgbd3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_reg3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_plot3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_optflow3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_line_descriptor3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_hdf3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_fuzzy3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_face3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dpm3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dnn3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_datasets3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_cvv3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ccalib3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bioinspired3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bgsegm3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_aruco3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_viz3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videostab3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videoio3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_video3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_superres3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_shape3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_photo3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_objdetect3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ml3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_highgui3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_flann3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_features2d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_core3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_calib3d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/liblog4cxx.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_regex.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librostime.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libcpp_common.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_system.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_thread.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_chrono.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_date_time.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libboost_atomic.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libpthread.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/i386-linux-gnu/libconsole_bridge.so
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_text3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_face3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ximgproc3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xfeatures2d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_shape3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_video3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_objdetect3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_calib3d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_features2d3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ml3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_highgui3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videoio3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_flann3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_core3.so.3.1.0
-/home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosuser/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection"
-	cd /home/rosuser/catkin_ws/build/super_drone && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/../../../src/super_drone/src/cv_detection.dir/link.txt --verbose=$(VERBOSE)
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/cv_detection_no_lamps.cpp.o
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/src/FlashDetector2_1.cpp.o
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build.make
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_tracking3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_surface_matching3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_structured_light3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stereo3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_saliency3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_rgbd3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_reg3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_plot3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_optflow3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_line_descriptor3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_hdf3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_fuzzy3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dpm3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dnn3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_datasets3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_cvv3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ccalib3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bioinspired3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bgsegm3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_aruco3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_viz3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videostab3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_superres3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_photo3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libroscpp.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ximgproc3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xfeatures2d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_tracking3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_text3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_surface_matching3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_structured_light3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stereo3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_saliency3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_rgbd3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_reg3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_plot3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_optflow3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_line_descriptor3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_hdf3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_fuzzy3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_face3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dpm3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_dnn3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_datasets3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_cvv3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ccalib3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bioinspired3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_bgsegm3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_aruco3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_viz3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videostab3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videoio3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_video3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_superres3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_shape3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_photo3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_objdetect3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ml3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_highgui3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_flann3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_features2d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_core3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_calib3d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/librostime.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libcpp_common.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_text3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_face3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ximgproc3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_xfeatures2d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_shape3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_video3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_objdetect3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_calib3d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_features2d3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_ml3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_highgui3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_videoio3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_flann3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: /opt/ros/kinetic/lib/libopencv_core3.so.3.1.0
+/home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection: super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gand/Documents/ros/drone_project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection"
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/../../../src/super_drone/src/cv_detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build: /home/rosuser/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection
+super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build: /home/gand/Documents/ros/drone_project/catkin_ws/devel/lib/super_drone/../../../src/super_drone/src/cv_detection
 
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/build
 
@@ -237,10 +237,10 @@ super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires: s
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/requires
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/clean:
-	cd /home/rosuser/catkin_ws/build/super_drone && $(CMAKE_COMMAND) -P CMakeFiles/../../../src/super_drone/src/cv_detection.dir/cmake_clean.cmake
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone && $(CMAKE_COMMAND) -P CMakeFiles/../../../src/super_drone/src/cv_detection.dir/cmake_clean.cmake
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/clean
 
 super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/depend:
-	cd /home/rosuser/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosuser/catkin_ws/src /home/rosuser/catkin_ws/src/super_drone /home/rosuser/catkin_ws/build /home/rosuser/catkin_ws/build/super_drone /home/rosuser/catkin_ws/src/super_drone/src/cv_detection.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gand/Documents/ros/drone_project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gand/Documents/ros/drone_project/catkin_ws/src /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone /home/gand/Documents/ros/drone_project/catkin_ws/build /home/gand/Documents/ros/drone_project/catkin_ws/build/super_drone /home/gand/Documents/ros/drone_project/catkin_ws/src/super_drone/src/cv_detection.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : super_drone/CMakeFiles/../../../src/super_drone/src/cv_detection.dir/depend
 

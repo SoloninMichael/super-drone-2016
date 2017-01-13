@@ -40,7 +40,24 @@ int fly_to (int x, int y)
 {
 	ros::Duration(0.01).sleep();
 	int spin = MED_X - x;
-	if ( std::abs( spin ) > 100)
+
+	//extern bool flag_over;
+
+	// if (flag_over == true)
+	// {
+	// 	cout << "here!" << endl;
+
+	// 	std_msgs::String msg;
+	// 	msg.data = "land";
+
+	// 	ROS_INFO("%s", msg.data.c_str());
+	// 	pub.publish(msg);
+	// 	ros::Duration(0.01).sleep();
+
+	// 	return 0;
+	// }
+
+	if ( std::abs( spin ) > 80)
 	{
 		// send message: turn_left spin
 		std_msgs::String msg;
@@ -68,10 +85,10 @@ int fly_to (int x, int y)
 			std_msgs::String msg;
 			if (altitude > 0)
 				//msg.data = "up " + std::to_string(altitude / 100);
-				msg.data = "up 1";
+				msg.data = "up 3";
 			else
 				//msg.data = "down " + std::to_string( (- altitude) / 100);
-				msg.data = "down 1";
+				msg.data = "down 3";
 
 			ROS_INFO("%s", msg.data.c_str());
 			pub.publish(msg);
@@ -80,7 +97,7 @@ int fly_to (int x, int y)
 		else
 		{
 			std_msgs::String msg;
-			msg.data = "land";
+			msg.data = "forward 1";
 
 			ROS_INFO("%s", msg.data.c_str());
 			pub.publish(msg);

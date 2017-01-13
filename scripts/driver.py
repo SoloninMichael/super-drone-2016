@@ -27,7 +27,7 @@ class Params:
 
 state = State()
 linear_params = Params(time=0.65, speed=0.25)
-angle_params = Params(time=1.0/3, speed=0.5)
+angle_params = Params(time=1.0/3, speed=0.25)
 
 
 def update_state(data):

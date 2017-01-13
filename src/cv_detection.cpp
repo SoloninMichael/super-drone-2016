@@ -32,9 +32,11 @@ vector<int> num_flash;
 
 vector<int> last_flash;
 
+bool detect = true;
 
 ros::Publisher pub; 
-
+ros::Subscriber img_sub;
+ros::Subscriber detect_sub;
 
 int fly_to (int x, int y)
 {
@@ -80,17 +82,13 @@ int fly_to (int x, int y)
 		else
 		{
 			std_msgs::String msg;
-			msg.data = "land";
+			msg.data = "forward 1";
 
 			ROS_INFO("%s", msg.data.c_str());
 			pub.publish(msg);
 			ros::Duration(0.01).sleep();
 		}
 	}
-
-
-	
-	// ready to fly towards the flash light
 }
 
 int detector(Mat &frame)
@@ -125,42 +123,46 @@ int detector(Mat &frame)
 
 int count = 0;
 
-ros::Subscriber sub;
 
 static const std::string OPENCV_WINDOW = "Image window";
 
-void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
+void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
     //ROS_INFO("I heard!");
 
+    if (!detect) {
+        cerr << "ignore some frames\n";
+        return;
+    }
     frame_counter++;
 
     cv_bridge::CvImagePtr cv_ptr;
     try
     {
       cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-	}
-	catch (cv_bridge::Exception& e)
-	{
-	  ROS_ERROR("cv_bridge exception: %s", e.what());
-	  return;
-	}
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      ROS_ERROR("cv_bridge exception: %s", e.what());
+      return;
+    }
 
-	Mat img;
-	double minVal, maxVal;
-	Point minLoc, maxLoc;
+    Mat img;
+    double minVal, maxVal;
+    Point minLoc, maxLoc;
 
-	// cvtColor(cv_ptr->image, img, CV_BGR2GRAY);
-	//bilateralFilter(img, img, 3, 8, 1.5);
-	
-	detector(cv_ptr->image);
+    // cvtColor(cv_ptr->image, img, CV_BGR2GRAY);
+    //bilateralFilter(img, img, 3, 8, 1.5);
 
-	//minMaxLoc(img, &minVal, &maxVal, &minLoc, &maxLoc);
-	
-	if (frame_counter < MAX_FRAMES)
-		return;
+    detector(cv_ptr->image);
 
-	vector<int>::iterator f = find_if(num_flash.begin(), num_flash.end(), IsFlash);
+    //minMaxLoc(img, &minVal, &maxVal, &minLoc, &maxLoc);
+
+    if (frame_counter < MAX_FRAMES)
+	    return;
+	    
+    detect = false;
+    vector<int>::iterator f = find_if(num_flash.begin(), num_flash.end(), IsFlash);
 
 	
 	if (f != num_flash.end()) {
@@ -175,7 +177,7 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 
 		waitKey(15); //blaze it
 
-		fly_to (fin.pt.x, fin.pt.y);
+		fly_to(fin.pt.x, fin.pt.y);
 	}
 
 	else {
@@ -189,6 +191,7 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 		ros::Duration(0.01).sleep();
 	}
 
+    
 	frame_counter = 0;
 	num_flash.erase(num_flash.begin(), num_flash.end());
 	last_flash.erase(last_flash.begin(), last_flash.end());
@@ -207,22 +210,29 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
     //cv::imshow(OPENCV_WINDOW, cv_ptr->image);
 }
 
+void masterCallback(const std_msgs::Empty &msg)
+{
+	cout << "setting true" << endl;
+    detect = true;
+}
+
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "cpp_img_listener");
-  ros::NodeHandle n;
-  ros::Rate(1).sleep();
+    ros::init(argc, argv, "cpp_img_listener");
+    ros::NodeHandle n;
+    ros::Rate(1).sleep();
 
-  pub = n.advertise<std_msgs::String>("for_master", 1000);
+    pub = n.advertise<std_msgs::String>("for_master", 1000);
 
 // %Tag(SUBSCRIBER)%
-  sub = n.subscribe("/ardrone/image_raw", 100, chatterCallback);
-// %EndTag(SUBSCRIBER)%
+    img_sub = n.subscribe("/ardrone/image_raw", 100, imageCallback);
+// %EndTag(SUBSCRIBER)%    
 
+    detect_sub = n.subscribe("detect", 100, masterCallback);
 // %Tag(SPIN)%
-  ros::spin();
+    ros::spin();
 // %EndTag(SPIN)%
 
-  return 0;
+    return 0;
 }
