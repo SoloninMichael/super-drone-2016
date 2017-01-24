@@ -32,15 +32,18 @@ vector<int> num_flash;
 
 vector<int> last_flash;
 
-
 ros::Publisher pub; 
 
 extern bool flag_over;
+extern KeyPoint prev_flash;
+extern bool search_in_eps;
+extern int my_count;
 
-
-int fly_to (int x = 0, int y = 0)
+int fly_to (int x = 0, int y = 0, float diam = 0.0)
 {
 	ros::Duration(0.01).sleep();
+
+	int multiplier = 0;
 
 	if (flag_over == true)
 	{
@@ -57,6 +60,8 @@ int fly_to (int x = 0, int y = 0)
 	}
 
 	int spin = MED_X - x;
+
+	search_in_eps = false;
 
 	if ( std::abs( spin ) > 80)
 	{
@@ -98,7 +103,9 @@ int fly_to (int x = 0, int y = 0)
 		else
 		{
 			std_msgs::String msg;
-			msg.data = "forward 1";
+			msg.data = "forward 2";
+
+			search_in_eps = true;
 
 			ROS_INFO("%s", msg.data.c_str());
 			pub.publish(msg);
@@ -106,8 +113,7 @@ int fly_to (int x = 0, int y = 0)
 		}
 	}
 
-
-	
+	my_count = 0;
 	// ready to fly towards the flash light
 }
 
@@ -115,7 +121,7 @@ int detector(Mat &frame)
 {
 	FlashDetector det;
 
-	Mat desc, result(frame.rows, frame.cols, CV_8UC3);
+	Mat result(frame.rows, frame.cols, CV_8UC3);
 
 	det.detectFlash(frame, keyImg, num_flash, last_flash, frame_counter);
 
@@ -203,10 +209,13 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 
 	vector<int>::iterator f = find_if(num_flash.begin(), num_flash.end(), IsFlash);
 
-	
 	if (f != num_flash.end()) {
 
 		KeyPoint fin = keyImg[f - num_flash.begin()];
+
+		prev_flash = fin;
+
+		float diameter = fin.size;
 
 		cout << fin.pt.x << " " << fin.pt.y << ";   ";
 
@@ -216,7 +225,7 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 
 		waitKey(15); //blaze it
 
-		fly_to (fin.pt.x, fin.pt.y);
+		fly_to (fin.pt.x, fin.pt.y, diameter);
 	}
 
 	else {
