@@ -35,27 +35,28 @@ vector<int> last_flash;
 
 ros::Publisher pub; 
 
+extern bool flag_over;
 
-int fly_to (int x, int y)
+
+int fly_to (int x = 0, int y = 0)
 {
 	ros::Duration(0.01).sleep();
+
+	if (flag_over == true)
+	{
+		cout << "here!" << endl;
+
+		std_msgs::String msg;
+		msg.data = "land";
+
+		ROS_INFO("%s", msg.data.c_str());
+		pub.publish(msg);
+		ros::Duration(0.01).sleep();
+
+		return 0;
+	}
+
 	int spin = MED_X - x;
-
-	//extern bool flag_over;
-
-	// if (flag_over == true)
-	// {
-	// 	cout << "here!" << endl;
-
-	// 	std_msgs::String msg;
-	// 	msg.data = "land";
-
-	// 	ROS_INFO("%s", msg.data.c_str());
-	// 	pub.publish(msg);
-	// 	ros::Duration(0.01).sleep();
-
-	// 	return 0;
-	// }
 
 	if ( std::abs( spin ) > 80)
 	{
@@ -186,6 +187,16 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg)
 	detector(new_img);//cv_ptr->image);
 
 	//minMaxLoc(img, &minVal, &maxVal, &minLoc, &maxLoc);
+
+
+	if (flag_over == true)
+	{
+		fly_to();
+
+		sub.shutdown();
+
+		return;
+	}
 	
 	if (frame_counter < MAX_FRAMES)
 		return;
